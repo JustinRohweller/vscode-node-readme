@@ -5,6 +5,7 @@ import { LocalProvider } from './providers/local'
 import { NpmProvider } from './providers/npm'
 import { RemoteProvider } from './providers/remote'
 import * as ShowReadme from './commands/showReadme'
+import { ReadmeUri } from './type-extensions';
 
 const commandPrefix = "nodeReadme"
 
