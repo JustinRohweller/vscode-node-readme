@@ -8,8 +8,7 @@ import { LocalProvider } from "../providers/local";
 import { NpmProvider } from "../providers/npm";
 import { RemoteProvider } from "../providers/remote";
 import { TestHook } from "../extension";
-import { ReadmeUri, overrideConfigurationSection } from "../type-extensions";
-// import { XHRRequest } from 'request-light';
+import { overrideConfigurationSection } from "../type-extensions";
 import * as httpRequest from "request-light";
 
 export const id = "showReadme";
