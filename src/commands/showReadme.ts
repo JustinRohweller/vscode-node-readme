@@ -124,15 +124,16 @@ async function findReadme(moduleName: string, textEditor?: vscode.TextEditor) {
       });
     }
 
-    vscode.window.showInformationMessage(finalString)
+    // vscode.window.showInformationMessage(finalString)
+    // @ts-ignore
     return vscode.env.openExternal(finalString);
     // return vscode.env.openExternal(finalString);
   } catch (err) {
     // vscode.window.showErrorMessage(readmeLocation);
     // return vscode.window.showInformationMessage(err)
-    console.log(err);
-    vscode.window.showInformationMessage(err)
-    return vscode.env.openExternal(`https://youtube.com`);
+    // console.log(err);
+    return vscode.window.showInformationMessage(err);
+    // return vscode.env.openExternal(`https://youtube.com`);
     // return vscode.env.openExternal(readmeLocation);
   }
   // return vscode.commands.executeCommand('markdown.showPreviewToSide', ReadmeUri.from(readmeLocation, moduleName).toEncodedUri())
